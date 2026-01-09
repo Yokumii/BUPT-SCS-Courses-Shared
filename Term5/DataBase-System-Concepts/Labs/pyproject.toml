@@ -1,0 +1,11 @@
+[project]
+name = "labs-of-database-system-concepts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jaydebeapi>=1.2.3",
+    "jpype1>=1.6.0",
+    "python-dotenv>=1.2.1",
+]
