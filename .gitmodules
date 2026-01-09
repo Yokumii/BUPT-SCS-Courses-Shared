@@ -1,0 +1,30 @@
+[submodule "Term2/Introduction-to-Computing-and-Programming-Practice"]
+	path = Term2/Introduction-to-Computing-and-Programming-Practice
+	url = git@github.com:Yokumii/BUPT-SCS-McDonalds-Ordering-System.git
+[submodule "Term5/Compiler-Principle-and-Technology/Labs/Lab1/Lexical-Analyzer-Cpp"]
+	path = Term5/Compiler-Principle-and-Technology/Labs/Lab1/Lexical-Analyzer-Cpp
+	url = https://github.com/Yokumii/Lexical-Analyzer-Cpp
+[submodule "Term5/Compiler-Principle-and-Technology/Labs/Lab1/Lexical-Analyzer-Lex"]
+	path = Term5/Compiler-Principle-and-Technology/Labs/Lab1/Lexical-Analyzer-Lex
+	url = https://github.com/Yokumii/Lexical-Analyzer-Lex
+[submodule "Term5/Compiler-Principle-and-Technology/Labs/Lab2/LL1-Parser"]
+	path = Term5/Compiler-Principle-and-Technology/Labs/Lab2/LL1-Parser
+	url = https://github.com/Yokumii/LL1-Parser
+[submodule "Term5/Compiler-Principle-and-Technology/Labs/Lab2/LR1-Parser"]
+	path = Term5/Compiler-Principle-and-Technology/Labs/Lab2/LR1-Parser
+	url = https://github.com/Yokumii/LR1-Parser
+[submodule "Term5/Compiler-Principle-and-Technology/Labs/Lab2/YACC-Parser"]
+	path = Term5/Compiler-Principle-and-Technology/Labs/Lab2/YACC-Parser
+	url = https://github.com/Yokumii/YACC-Parser
+[submodule "Term5/Computer-Networking-Practical/Labs/MyLabs"]
+	path = Term5/Computer-Networking-Practical/Labs/MyLabs
+	url = https://github.com/Yokumii/Cisco-Network-Simulator.git
+[submodule "Term5/Literate-Programming/Finalworks"]
+	path = Term5/Literate-Programming/Finalworks
+	url = https://github.com/Yokumii/DSL-driven-Agent
+[submodule "Term5/Python-Programming/Finalwork"]
+	path = Term5/Python-Programming/Finalwork
+	url = https://github.com/Yokumii/Lianjia-Housing-Analysis.git
+[submodule "Term4/Java"]
+	path = Term4/Java
+	url = https://github.com/1BIMU/JAVA_course_design.git
