@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUPT 智能充电桩调度计费系统</title>
+    <link rel="icon" href="https://www.bupt.edu.cn/favicon.ico" />
+    <!-- Ant Design CDN for faster first paint -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #e4ecf7 100%);
+        min-height: 100vh;
+      }
+      #root { min-height: 100vh; }
+
+      /* BUPT Theme Colors */
+      :root {
+        --bupt-primary: #1a3d7c;
+        --bupt-secondary: #2d5dab;
+        --bupt-accent: #4a90d9;
+        --bupt-light: #e8f0fe;
+        --bupt-gradient: linear-gradient(135deg, #1a3d7c 0%, #2d5dab 50%, #4a90d9 100%);
+        --shadow-sm: 0 2px 8px rgba(26, 61, 124, 0.08);
+        --shadow-md: 0 4px 16px rgba(26, 61, 124, 0.12);
+        --shadow-lg: 0 8px 32px rgba(26, 61, 124, 0.16);
+      }
+
+      /* Global animations */
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes slideInLeft {
+        from { opacity: 0; transform: translateX(-20px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 0 rgba(82, 196, 26, 0); }
+        50% { transform: scale(1.02); box-shadow: 0 0 28px rgba(82, 196, 26, 0.28); }
+      }
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      @keyframes floatY {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes glowRing {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(74, 144, 217, 0.32); }
+        50% { box-shadow: 0 0 0 10px rgba(74, 144, 217, 0); }
+      }
+      .fade-in-up { animation: fadeInUp 0.5s ease-out forwards; }
+      .slide-in-left { animation: slideInLeft 0.4s ease-out forwards; }
+      .page-enter { animation: fadeInUp 0.55s ease-out both; }
+      .stagger-card { animation: fadeInUp 0.55s ease-out both; }
+      .stagger-card:nth-child(1) { animation-delay: 0.02s; }
+      .stagger-card:nth-child(2) { animation-delay: 0.08s; }
+      .stagger-card:nth-child(3) { animation-delay: 0.14s; }
+      .stagger-card:nth-child(4) { animation-delay: 0.20s; }
+      .interactive-card { transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease; }
+      .interactive-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg) !important; }
+      .floating-illustration { animation: floatY 4.5s ease-in-out infinite; }
+      .pulse-online { animation: glowRing 2.4s ease-in-out infinite; }
+      .pulse-charging { animation: pulse 2.2s ease-in-out infinite; }
+      .gradient-shimmer {
+        background-size: 220% 100% !important;
+        animation: shimmer 4s linear infinite;
+      }
+      .hero-orb {
+        position: absolute;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.13);
+        filter: blur(0.2px);
+        pointer-events: none;
+      }
+      .soft-panel {
+        background: rgba(255,255,255,0.82);
+        border: 1px solid rgba(232,240,254,0.9);
+        backdrop-filter: blur(12px);
+      }
+      .status-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+data/
+
+/tmp
+
+# Ignore index files
+index/
+*.pkl
+*.model
+*.npy
+
+*.json
+
+docs/dev/
+.worktrees/

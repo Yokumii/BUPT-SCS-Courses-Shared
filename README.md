@@ -84,6 +84,20 @@ git checkout
 | [网络存储技术](./Term5/Network-Storage-Technologies) | 选修 | 2 | [6次小论文](./Term5/Network-Storage-Technologies/Homeworks) | [大论文](./Term5/Network-Storage-Technologies/Finalworks) |
 | [程序设计实践](./Term5/Literate-Programming) | 选修 | 2 | [4次作业](./Term5/Literate-Programming/Homeworks) | [大作业](./Term5/Literate-Programming/Finalworks) |
 
+### 第六学期
+
+| 课程名称       | 课程性质      | 课程学分 | 作业/实验                                               | 期末考核 |
+| -------------- | ------------- | -------- | ------------------------------------------------------- | -------- |
+| [计算机系统结构](./Term6/Computer-Architecture) | 必修 | 3    | [平时作业 + 读书报告](./Term6/Computer-Architecture/Homeworks)<br>[4 次实验报告](./Term6/Computer-Architecture/Labs) | 期末考试<br>[往年题](./Term6/Computer-Architecture/Past-Exams) |
+| [现代交换原理](./Term6/Modern-Switching-and-Networks) | 必修 | 3 | [平时作业](./Term6/Modern-Switching-and-Networks/Homeworks)<br>[3 次实验报告](./Term6/Modern-Switching-and-Networks/Labs)<br>[课上研讨](./Term6/Modern-Switching-and-Networks/Seminars) | 期末考试<br>[往年题](./Term6/Modern-Switching-and-Networks/Past-Exams)<br>[复习提纲](./Term6/Modern-Switching-and-Networks/Reviews) |
+| [软件工程](./Term6/Software-Engineering) | 必修 | 3 | [3 次作业](./Term6/Software-Engineering/Homeworks) | 期中 + 期末考试<br>[往年题](./Term6/Software-Engineering/Past-Exams)<br>[复习资料](./Term6/Software-Engineering/Reviews) |
+| [下一代 Internet 技术](./Term6/Next-Internet) | 选修 | 2 | [1 次实验](./Term6/Next-Internet/Labs) |[期末报告](./Term6/Next-Internet/Finalworks) |
+| [信息与知识获取](./Term6/Information-Retrieval) | 选修 | 2 | [3 次作业](./Term6/Information-Retrieval/Homeworks) | 无 |
+| [机器学习](./Term6/Machine-Learning) | 选修 | 2 | [小测 + 读书报告](./Term6/Machine-Learning/Homeworks) | [期末大作业](./Term6/Machine-Learning/Finalworks) |
+| [无线传感器网络](./Term6/Wireless-Sensor-Network) | 选修 | 2 | [1 次实验](./Term6/Wireless-Sensor-Network/Labs) | [期末大作业](./Term6/Wireless-Sensor-Network/Finalworks) |
+| [编译原理与技术课程设计](./Term6/Compiler-Principle-and-Technology-Course-Design) | 选修 | 2 | / | [课设仓库](https://github.com/Gh-Shinku/foo-pascal-cp) |
+| [专业实习](./Term6/Specialized-Practice) | 指选 | 1.5 | [3 次实验](./Term6/Specialized-Practice/Labs) | 无 |
+
 ### 培养方案
 
 1. [计算机学院培养方案2022版](./Additional-Information/Cultivation/计算机学院22版培养方案0927.pdf)
