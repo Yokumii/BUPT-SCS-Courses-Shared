@@ -116,6 +116,21 @@ git checkout
 - 脚本地址：[bupt-jwgl-evaluation-autofill.js](./Scripts/bupt-jwgl-evaluation-autofill.js)
 - 食用方法：在期末评教页面打开浏览器控制台，粘贴脚本内容并回车，即可自动填充评教表单。注意，脚本默认不会自动提交，如需自动提交可将 `CONFIG.finalSubmit` 改为 `true` 再运行，但**请务必在提交前检查评教内容，确保符合实际情况！**
 
+### 培养方案完成情况检查
+
+- 脚本地址：[graduate-check](./Scripts/graduate-check/)
+- 食用方法：
+  1. 进入本科教务系统首页；
+  2. 按 `F12`（macOS 可按 `⌥⌘I`）打开开发者工具，切换到 `Console`（控制台）；
+  3. 复制 [`bupt-course-export.console.js`](./Scripts/graduate-check/bupt-course-export.console.js) 的完整内容，粘贴到控制台并按回车；
+  4. 脚本会自动访问两个查询页面，并将 `北邮培养方案与创新学分_YYYY-MM-DD.csv` 下载到浏览器默认下载目录；
+  5. 双击打开 [`graduate-check.html`](./Scripts/graduate-check/graduate-check.html)；
+  6. 选择形如 `北邮培养方案与创新学分_YYYY-MM-DD.csv` 的文件；
+  7. 页面会立即给出“仅已修”和“已修＋修读中”两套结果。
+- 特别说明：
+  - 校验覆盖培养方案中的最低 165 学分，以及通识教育、数学与自然科学、学科基础、专业基础、专业模块选修、实践教学、创新创业教育等课程与组合要求。同课程编号会自动去重，避免教务页面合并单元格导致体育、英语等课程重复计分。“计划外课程”不计入 165 学分。
+  - 目前校验逻辑**仅适用于北京邮电大学计算机学院 2023 级“计算机科学与技术”专业**。
+
 ## Awesome
 
 本人在收集时参考了以下仓库或网站的部分资料：

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>北邮计算机科学与技术毕业要求校验</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18201d;
+      --muted: #62706b;
+      --line: #dbe3df;
+      --paper: #fff;
+      --background: #f3f6f4;
+      --accent: #176b4d;
+      --pass: #116441;
+      --pass-bg: #e7f5ed;
+      --fail: #a0392b;
+      --fail-bg: #fff0ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    main { width: min(960px, calc(100% - 32px)); margin: 56px auto 80px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 10px; font-size: clamp(25px, 4vw, 38px); line-height: 1.25; letter-spacing: -.02em; }
+    .intro { max-width: 760px; color: var(--muted); font-size: 16px; }
+    .drop-zone {
+      display: block;
+      margin: 28px 0;
+      padding: 38px 24px;
+      border: 2px dashed #aebdb6;
+      border-radius: 16px;
+      background: var(--paper);
+      text-align: center;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+    }
+    .drop-zone:hover, .drop-zone.dragging { border-color: var(--accent); background: #f4fbf7; }
+    .drop-zone strong { display: block; margin-bottom: 5px; color: var(--accent); font-size: 17px; }
+    .drop-zone span { color: var(--muted); }
+    input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+    .summary, .check-section, .notes, .error {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+    }
+    .summary { display: flex; justify-content: space-between; gap: 24px; padding: 24px; }
+    .summary h2 { margin-bottom: 6px; font-size: 22px; }
+    .summary p { margin-bottom: 0; color: var(--muted); }
+    .eyebrow { margin-bottom: 3px !important; color: var(--accent) !important; font-size: 13px; font-weight: 650; }
+    .verdicts { display: flex; flex: 0 0 auto; gap: 10px; align-items: center; }
+    .verdict { min-width: 108px; padding: 11px 13px; border-radius: 10px; }
+    .verdict span, .verdict strong { display: block; }
+    .verdict span { font-size: 12px; opacity: .78; }
+    .verdict.pass, .badge.pass { color: var(--pass); background: var(--pass-bg); }
+    .verdict.fail, .badge.fail { color: var(--fail); background: var(--fail-bg); }
+    .scope-note { margin: 14px 4px 22px; color: var(--muted); font-size: 13px; }
+    .check-section { overflow: hidden; }
+    .check-section h3, .notes h3 { margin: 0; padding: 14px 18px; border-bottom: 1px solid var(--line); font-size: 16px; }
+    .check-row { display: flex; justify-content: space-between; gap: 18px; padding: 14px 18px; border-top: 1px solid #edf1ef; }
+    .check-row:first-child { border-top: 0; }
+    .check-row strong, .check-row span { display: block; }
+    .check-row > div:first-child > span { margin-top: 2px; color: var(--muted); font-size: 13px; }
+    .check-states { display: flex; flex: 0 0 auto; gap: 8px; align-items: center; }
+    .badge { padding: 4px 9px; border-radius: 999px; font-size: 12px; font-weight: 650; white-space: nowrap; }
+    .notes { padding-bottom: 5px; }
+    .notes ul { margin: 14px 22px 14px 38px; padding: 0; color: var(--muted); }
+    .notes li + li { margin-top: 5px; }
+    .error { padding: 22px; border-color: #efc6bf; background: var(--fail-bg); color: var(--fail); }
+    .error h2 { margin-bottom: 5px; font-size: 20px; }
+    .error p { margin-bottom: 0; }
+    @media (max-width: 700px) {
+      main { margin-top: 30px; }
+      .summary, .check-row { display: block; }
+      .verdicts, .check-states { margin-top: 14px; }
+      .verdict { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>计算机科学与技术毕业要求校验</h1>
+    <p class="intro">适用于北京邮电大学计算机学院 2023 级计算机科学与技术专业。文件只在本机浏览器中读取，不会上传。</p>
+
+    <label id="drop-zone" class="drop-zone" for="csv-file">
+      <strong>选择培养方案与创新学分 CSV，立即校验</strong>
+      <span>也可以把“北邮培养方案与创新学分_日期.csv”拖到这里</span>
+      <input id="csv-file" type="file" accept=".csv,text/csv">
+    </label>
+
+    <div id="output"></div>
+  </main>
+  <script src="graduate-check.js"></script>
+</body>
+</html>
