@@ -32,6 +32,11 @@ git checkout
 
 ## 资料列表
 
+### 个人笔记
+
+- [Yokumii/BUPTnotes](https://github.com/Yokumii/BUPTnotes)
+- 在线阅读：[buptwiki.yokumi.cn](https://buptwiki.yokumi.cn)
+
 ### 第一学期
 
 | 课程名称       | 课程性质      | 课程学分 | 作业/实验                                               | 期末考核 |
